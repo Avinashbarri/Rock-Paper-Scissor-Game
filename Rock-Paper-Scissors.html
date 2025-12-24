@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors-Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #444b5d;
+            color: white;
+        }
+        h1{
+            background-color: #081b31;
+            height: 50px;
+            text-align: center;
+            color: white;
+        }
+        .img {
+            height: 100px;
+            border: 5px solid black;
+            border-radius: 51px;
+        }
+        .hov:hover {
+            border: 5px solid #081b31;
+            height: 6rem;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 62px auto;
+            gap: 80px;
+        }
+        .score-board {
+            display: flex;
+            justify-content: center;
+            gap: 148px;
+            margin-top: 100px;
+            font-size: 2.06rem;
+        }
+        #user-score,
+        #comp-score {
+            font-size: 4rem;
+        }
+        .msg-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        #msg {
+            background-color: #081b31;
+            color: white;
+            font-size: 2rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rock Paper Scissors Game</h1>
+    <div class="container">
+        <img src="Rock.png" class="img hov" id="Rock" alt=Rock image">
+        <img src="paper.png" class="img hov" id="Paper" alt="Paper image">
+        <img src="Scissors.png" class="img hov" id="Scissors" alt="Scissors image">
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p style="margin: left -1px;px">user</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p style="margin-left:-35px">computer</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
